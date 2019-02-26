@@ -29,6 +29,7 @@
     
 ### Images
 
-    <img border="0" alt="Hash Hackers" src="//assets.parveenbhadoo.com/images/hashhackes_logo.png" width="200px" height="auto">
+    <img border="0" alt="Hash Hackers" src="//assets.parveenbhadoo.com/images/hashhackers_logo.png" width="200px" height="auto">
+    <img border="0" alt="Hash Hackers" src="//assets.parveenbhadoo.com/images/hashhackers_logo.webp" width="200px" height="auto">
 
 © 2019 PBG Worldwide, Inc.
