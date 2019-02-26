@@ -15,4 +15,20 @@
 
     <link rel="manifest" href="/site.webmanifest">
 
+### CSS
+
+    <link rel="stylesheet" href="//assets.parveenbhadoo.com/css/bhadootelecom-com-homepage.css">
+    <link rel="stylesheet" href="//assets.parveenbhadoo.com/css/bootstrap-v4.0.0.min.css">
+    <link rel="stylesheet" href="//assets.parveenbhadoo.com/css/classic-button.css">
+    <link rel="stylesheet" href="//assets.parveenbhadoo.com/css/mail-box-style.css">
+    <link rel="stylesheet" href="//assets.parveenbhadoo.com/css/404.css">
+
+### JS
+
+    <script src="//assets.parveenbhadoo.com/js/copy-click-on-button-code.js"></script>
+    
+### Images
+
+    <img border="0" alt="Hash Hackers" src="//assets.parveenbhadoo.com/images/hashhackes_logo.png" width="200px" height="auto">
+
 © 2019 PBG Worldwide, Inc.
