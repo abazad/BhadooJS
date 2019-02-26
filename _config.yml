@@ -1,5 +1,6 @@
-title: Assets | Parveen Bhadoo
-url: assets.parveenbhadoo.com
+title: Parveen Bhadoo
+description: CDN Contents of Parveen Bhadoo Websites
+url: https://assets.parveenbhadoo.com
 
 plugins:
   - jekyll-seo-tag
