@@ -1,6 +1,7 @@
 title: Parveen Bhadoo
 description: CDN Contents of Parveen Bhadoo Websites
 url: https://assets.parveenbhadoo.com
+favicon: https://assets.parveenbhadoo.com/icons/favicon-32x32.png
 
 plugins:
   - jekyll-seo-tag
