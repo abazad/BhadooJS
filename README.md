@@ -1,4 +1,6 @@
-# Images, CSS, JS etc Assets Github CDN for Parveen Bhadoo Websites 
+# Assets
+
+## Images, CSS, JS etc Assets Github CDN for Parveen Bhadoo Websites 
 
 ### Favicons
 
