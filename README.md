@@ -6,9 +6,9 @@
 
 To Generate SRI Hash visit [https://www.srihash.org/](https://www.srihash.org/)
 
-Latest CDN Files with embed process [https://www.jsdelivr.com/package/npm/bhadoojs](https://www.jsdelivr.com/package/npm/bhadoojs)
+Latest CDN Files with embed process [https://www.jsdelivr.com/package/gh/ParveenBhadooOfficial/BhadooJS](https://www.jsdelivr.com/package/gh/ParveenBhadooOfficial/BhadooJS)
 
-Latest CDN Files with direct links [https://cdn.jsdelivr.net/npm/bhadoojs@latest/](https://cdn.jsdelivr.net/npm/bhadoojs@latest/)
+Latest CDN Files with direct links [https://cdn.jsdelivr.net/gh/ParveenBhadooOfficial/BhadooJS/](https://cdn.jsdelivr.net/gh/ParveenBhadooOfficial/BhadooJS/)
 
 ### Working with npm
 
