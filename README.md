@@ -4,7 +4,7 @@
 
 ## Important Links
 
-To Generate SRI Hash visit [https://www.srihash.org/](https://www.srihash.org/)
+To Generate SRI Hash visit [https://www.srihash.org/](https://www.srihash.org/){:target="_blank"}
 
 Latest CDN Files with embed process [https://www.jsdelivr.com/package/npm/bhadoojs](https://www.jsdelivr.com/package/npm/bhadoojs)
 
