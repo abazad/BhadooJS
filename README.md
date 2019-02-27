@@ -32,20 +32,15 @@ To delete a package use
 ### Favicons
 
     <link rel="apple-touch-icon" sizes="180x180" href="https://cdn.jsdelivr.net/gh/ParveenBhadooOfficial/BhadooJS/icons/apple-touch-icon.png">
-    
     <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.jsdelivr.net/gh/ParveenBhadooOfficial/BhadooJS/icons/favicon-32x32.png">
-    
     <link rel="icon" type="image/png" sizes="16x16" href="https://cdn.jsdelivr.net/gh/ParveenBhadooOfficial/BhadooJS/icons/favicon-16x16.png">
-    
     <link rel="mask-icon" href="https://cdn.jsdelivr.net/gh/ParveenBhadooOfficial/BhadooJS/icons/safari-pinned-tab.svg" color="#5bbad5">
-    
-    <meta name="msapplication-TileColor" content="#da532c">
-    
+
     <meta name="theme-color" content="#ffffff">
 
 ### Manifest
 
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="manifest" href="/manifest.json">
 
 ### CSS
 
@@ -82,6 +77,7 @@ To delete a package use
     <img border="0" alt="Hash Hackers" src="https://cdn.jsdelivr.net/gh/ParveenBhadooOfficial/BhadooJS/images/hashhackers_logo.png" width="200px" height="auto">
     
     <img border="0" alt="Hash Hackers" src="https://cdn.jsdelivr.net/gh/ParveenBhadooOfficial/BhadooJS/images/hashhackers_logo.webp?active" width="200px" height="auto">
-
+    
+    <img border="0" alt="Hash Hackers" src="https://cdn.jsdelivr.net/gh/ParveenBhadooOfficial/BhadooJS/images/bhadoomail_logo.png?active" width="200px" height="auto">
 
 Open Source Project by [Parveen Bhadoo](https://www.parveenbhadoo.com)
