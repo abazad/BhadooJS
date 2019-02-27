@@ -1,6 +1,25 @@
 # Assets
 
-## Images, CSS, JS etc Assets Github CDN for Parveen Bhadoo Websites 
+## Images, CSS, JS etc Assets Github CDN for Parveen Bhadoo Websites
+
+### Working with npm
+
+Use Node.js command prompt as terminal
+    
+Create a package.json file with name and version where bhadoojs is Assets package name.
+    
+    {
+    "name": "bhadoojs",
+    "version": "1.0.0"
+    }
+    
+Use Publish Command to Publish the Repo Publically
+    
+    npm publish --access=public
+    
+To delete a package use
+    
+    npm unpublish <package_name> -f --force
 
 ### Favicons
 
