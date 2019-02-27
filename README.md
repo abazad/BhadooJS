@@ -4,7 +4,7 @@
 
 ## Important Links
 
-To Generate SRI Hash visit [https://www.srihash.org/](https://www.srihash.org/){:target="_blank"}
+To Generate SRI Hash visit [https://www.srihash.org/](https://www.srihash.org/)
 
 Latest CDN Files with embed process [https://www.jsdelivr.com/package/npm/bhadoojs](https://www.jsdelivr.com/package/npm/bhadoojs)
 
@@ -59,4 +59,4 @@ To delete a package use
     <img border="0" alt="Hash Hackers" src="//assets.parveenbhadoo.com/images/hashhackers_logo.png" width="200px" height="auto">
     <img border="0" alt="Hash Hackers" src="//assets.parveenbhadoo.com/images/hashhackers_logo.webp?active" width="200px" height="auto">
 
-© 2019 PBG Worldwide, Inc.
+Open Source Project
