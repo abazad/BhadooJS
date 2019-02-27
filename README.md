@@ -1,4 +1,4 @@
-# Assets [![](https://data.jsdelivr.com/v1/package/npm/bhadoojs/badge)](https://www.jsdelivr.com/package/npm/bhadoojs)
+# BhadooJS [![](https://data.jsdelivr.com/v1/package/npm/bhadoojs/badge)](https://www.jsdelivr.com/package/npm/bhadoojs)
 
 ## Images, CSS, JS etc Assets Github CDN for Parveen Bhadoo Websites
 
