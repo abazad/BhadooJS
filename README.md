@@ -21,6 +21,12 @@ To delete a package use
     
     npm unpublish <package_name> -f --force
 
+To Generate SRI Hash visit [https://www.srihash.org/](https://www.srihash.org/)
+Latest CDN Files with embed process [https://www.jsdelivr.com/package/npm/bhadoojs](https://www.jsdelivr.com/package/npm/bhadoojs)
+Latest CDN Files with direct links [https://cdn.jsdelivr.net/npm/bhadoojs@latest/](https://cdn.jsdelivr.net/npm/bhadoojs@latest/)
+
+[![](https://data.jsdelivr.com/v1/package/npm/bhadoojs/badge)](https://www.jsdelivr.com/package/npm/bhadoojs)
+
 ### Favicons
 
     <link rel="apple-touch-icon" sizes="180x180" href="//assets.parveenbhadoo.com/icons/apple-touch-icon.png">
