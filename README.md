@@ -31,10 +31,10 @@ To delete a package use
 
 ### Favicons
 
-    <link rel="apple-touch-icon" sizes="180x180" href="https://cdn.jsdelivr.net/gh/ParveenBhadooOfficial/BhadooJS/icons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.jsdelivr.net/gh/ParveenBhadooOfficial/BhadooJS/icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="https://cdn.jsdelivr.net/gh/ParveenBhadooOfficial/BhadooJS/icons/favicon-16x16.png">
-    <link rel="mask-icon" href="https://cdn.jsdelivr.net/gh/ParveenBhadooOfficial/BhadooJS/icons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://cdn.jsdelivr.net/gh/ParveenBhadooOfficial/BhadooJS@1.0.9/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.jsdelivr.net/gh/ParveenBhadooOfficial/BhadooJS@1.0.9/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://cdn.jsdelivr.net/gh/ParveenBhadooOfficial/BhadooJS@1.0.9/icons/favicon-16x16.png">
+    <link rel="mask-icon" href="https://cdn.jsdelivr.net/gh/ParveenBhadooOfficial/BhadooJS@1.0.9/icons/safari-pinned-tab.svg" color="#5bbad5">
 
     <meta name="theme-color" content="#ffffff">
 
@@ -58,14 +58,16 @@ To delete a package use
 
 ### JS
 
-    <script src="https://cdn.jsdelivr.net/gh/ParveenBhadooOfficial/BhadooJS@1.0.0/js/copy-click-on-button-code.js" integrity="sha256-DN8Abv8u8YT3P4PCX9xXKK9agjfXnh8l96HDJrvfMdw=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/gh/ParveenBhadooOfficial/BhadooJS@1.0.0/js/moving_letters.js" integrity="sha256-vsT/O4UwBOCW/wFrub/ElsjIpt9SkA8krEAexkdtmKk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/ParveenBhadooOfficial/BhadooJS@1.0.6/js/copy-click-on-button-code.js" integrity="sha256-DN8Abv8u8YT3P4PCX9xXKK9agjfXnh8l96HDJrvfMdw=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/ParveenBhadooOfficial/BhadooJS@1.0.6/js/moving_letters.js" integrity="sha256-vsT/O4UwBOCW/wFrub/ElsjIpt9SkA8krEAexkdtmKk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/ParveenBhadooOfficial/BhadooJS@1.0.6/js/wa.hashhackers.com_autoads.js" integrity="sha256-VNqgkYaW/fxioqLeUVrGAVdrLH5KLThYAat0n0oJys4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/ParveenBhadooOfficial/BhadooJS@1.0.6/js/wa.hashhackers.com_process.js" integrity="sha256-AnZKxmjRh26gm+VoWSJiR/2XUltqbFE+gv5hS5wMq/A=" crossorigin="anonymous"></script>
     
 ### Images
 
-    <img border="0" alt="Hash Hackers" src="https://cdn.jsdelivr.net/gh/ParveenBhadooOfficial/BhadooJS/images/hashhackers_logo.png" width="200px" height="auto">
-    <img border="0" alt="Hash Hackers" src="https://cdn.jsdelivr.net/gh/ParveenBhadooOfficial/BhadooJS/images/hashhackers_logo.webp?active" width="200px" height="auto">
-    <img border="0" alt="Hash Hackers" src="https://cdn.jsdelivr.net/gh/ParveenBhadooOfficial/BhadooJS/images/bhadoomail_logo.png?active" width="200px" height="auto">
+    <img border="0" alt="Hash Hackers" src="https://cdn.jsdelivr.net/gh/ParveenBhadooOfficial/BhadooJS@1.0.9/images/hashhackers_logo.png" width="200px" height="auto">
+    <img border="0" alt="Hash Hackers" src="https://cdn.jsdelivr.net/gh/ParveenBhadooOfficial/BhadooJS@1.0.9/images/hashhackers_logo.webp?active" width="200px" height="auto">
+    <img border="0" alt="Hash Hackers" src="https://cdn.jsdelivr.net/gh/ParveenBhadooOfficial/BhadooJS@1.0.9/images/bhadoomail_logo.png?active" width="200px" height="auto">
 
 ### APK Files Version in Ascending Order
 
