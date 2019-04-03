@@ -71,7 +71,7 @@ To delete a package use
 
 ### APK Files Version in Ascending Order
 
-[MX_Player_Pro_1.9.24.apk](https://cdn.jsdelivr.net/gh/ParveenBhadooOfficial/BhadooJS@1.0.8/apk/MX_Player_Pro_1.9.24.apk)
+[MX_Player_Pro_1.10.47.apk](https://cdn.jsdelivr.net/gh/ParveenBhadooOfficial/BhadooJS@1.0.21/apk/MX_Player_Pro_1.10.47_Bhadoo.apk)
 
     <a href="https://cdn.jsdelivr.net/gh/ParveenBhadooOfficial/BhadooJS@1.0.8/apk/MX_Player_Pro_1.9.24.apk">MX_Player_Pro_1.9.24.apk</a>
 
