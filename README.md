@@ -29,6 +29,81 @@ To delete a package use
     
     npm unpublish <package_name> -f --force
 
+### Forward Emails from Domains using DNS and [ForwardMail.Net](https://forwardemail.net)
+
+> <u>**IMPORTANT NOTE:**</u> Replace `niftylettuce@gmail.com` below with the email address you want to forward emails to:
+
+**1.** Set the following DNS MX records on your domain name (having both is required):
+
+| Name/Host/Alias    |  TTL | Record Type | Priority | Value/Answer/Destination |
+| ------------------ | :--: | ----------- | -------- | ------------------------ |
+| _@ or leave blank_ | 3600 | MX          | 10       | mx1.forwardemail.net     |
+| _@ or leave blank_ | 3600 | MX          | 20       | mx2.forwardemail.net     |
+
+> Note that there should be NO other MX records set on your domain name.  If there were already MX records that existed, please delete them completely.
+
+**2.** Set (and customize) the following DNS TXT records on your domain name:
+
+> If you are forwarding all emails from your domain, (`all@niftylettuce.com`, `hello@niftylettuce.com`, etc) to a specific address `niftylettuce@gmail.com`:
+
+| Name/Host/Alias    |  TTL | Record Type | Value/Answer/Destination               |
+| ------------------ | :--: | ----------- | -------------------------------------- |
+| _@ or leave blank_ | 3600 | TXT         | `forward-email=niftylettuce@gmail.com` |
+
+> If you just need to forward a single email address (e.g. `hello@niftylettuce.com` to `niftylettuce@gmail.com`; this will also forward `hello+test@niftylettuce.com` to `niftylettuce+test@gmail.com` automatically):
+
+| Name/Host/Alias    |  TTL | Record Type | Value/Answer/Destination                     |
+| ------------------ | :--: | ----------- | -------------------------------------------- |
+| _@ or leave blank_ | 3600 | TXT         | `forward-email=hello:niftylettuce@gmail.com` |
+
+> If you are forwarding multiple emails, then you'll want to separate them with a comma:
+
+| Name/Host/Alias    |  TTL | Record Type | Value/Answer/Destination                                                    |
+| ------------------ | :--: | ----------- | --------------------------------------------------------------------------- |
+| _@ or leave blank_ | 3600 | TXT         | `forward-email=hello:niftylettuce@gmail.com,support:niftylettuce@gmail.com` |
+
+> As of November 2, 2018 we now have added support for multi-line TXT records!  You can now have an infinite amount of forwarding emails setup – just make sure to not wrap over 255 characters in a single-line and start each line with `forward-email=`.  An example is provided below:
+
+| Name/Host/Alias    |  TTL | Record Type | Value/Answer/Destination                                                    |
+| ------------------ | :--: | ----------- | --------------------------------------------------------------------------- |
+| _@ or leave blank_ | 3600 | TXT         | `forward-email=hello:niftylettuce@gmail.com,support:niftylettuce@gmail.com` |
+| _@ or leave blank_ | 3600 | TXT         | `forward-email=help:niftylettuce@gmail.com,foo:niftylettuce@gmail.com`      |
+| _@ or leave blank_ | 3600 | TXT         | `forward-email=orders:niftylettuce@gmail.com,baz:niftylettuce@gmail.com`    |
+| _@ or leave blank_ | 3600 | TXT         | `forward-email=info:niftylettuce@gmail.com,beep:niftylettuce@gmail.com`     |
+| _@ or leave blank_ | 3600 | TXT         | `forward-email=errors:niftylettuce@gmail.com,boop:niftylettuce@gmail.com`   |
+
+**3.** Set (and customize) the following SPF record for SPF verification for your domain name (this will allow SPF verification to pass, note that you may need to enclose this value in quotes if you are using Amazon Route53):
+
+> Note that if you are using a service such as GoDaddy, you will need to use a TXT record type instead of an SPF record for this step.
+>
+> If you're using a service like AWS Route 53, then edit your existing TXT record and add the following as a new line:
+
+| Name/Host/Alias    |  TTL | Record Type | Value/Answer/Destination                        |
+| ------------------ | :--: | ----------- | ----------------------------------------------- |
+| _@ or leave blank_ | 3600 | SPF         | `v=spf1 a mx include:spf.forwardemail.net -all` |
+
+> :warning: If you are using Google Apps, you'll need to append `include:_spf.google.com` to the value above – e.g. `v=spf1 a mx include:spf.forwardemail.net include:_spf.google.com -all`.
+>
+> If you already have a similar line with `v=spf1`, then you'll need to append `include:spf.forwardemail.net` right before any existing `include:host.com` records and before the `-all` in the same line (e.g. `v=spf1 a mx include:spf.forwardemail.net include:host.com -all`).
+>
+> Note that there is a difference between `-all` and `~all`.  The `-` indicates that the SPF check should FAIL if it does not match, and `~` indicates that the SPF check should SOFTFAIL.  We recommend to use the `-all` approach to prevent domain forgery.
+
+**4.** Send a test email to confirm it works.  Note that it might take some time for your DNS records to propagate.
+
+**5.** Add `no-reply@forwardemail.net` to your contacts.  In the event that someone is attempting to send you an email that has a strict DMARC record policy of `reject` or `quarantine`, we will rewrite the email's `From` header with a "friendly-from".  This means the `From` will look like `Sender's Name <no-reply@forwardemail.net>` and a `Reply-To` will be added with the original sender's `From` address.  In the event that there is already a `Reply-To` set, we will not overwrite it.
+
+**6.** If you wish to "Send Mail As" from Gmail, then you will need to follow the steps under [Send Mail As Using Gmail](#send-mail-as-using-gmail) below.
+
+---
+
+_Optional Add-ons:_
+
+* Add a DMARC record for your domain name by following the instructions at <https://dmarc.postmarkapp.com> (this will allow DMARC verification to pass)
+* If the email lands in your spam folder (which it should not), you can whitelist it (e.g. here are instructions for Google <https://support.google.com/a/answer/60751?hl=en&ref_topic=1685627>)
+* Add the ability to "Send Mail As" from Gmail by following [Send Mail As Using Gmail](#send-mail-as-using-gmail) below
+
+For more Visit [ForwardMail.Net](https://forwardemail.net)
+
 ### Favicons
 
     <link rel="apple-touch-icon" sizes="180x180" href="https://cdn.jsdelivr.net/gh/ParveenBhadooOfficial/BhadooJS@1.0.9/icons/apple-touch-icon.png">
