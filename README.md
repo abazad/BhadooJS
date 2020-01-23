@@ -150,4 +150,29 @@ For more Visit [ForwardMail.Net](https://forwardemail.net)
 
     <a href="https://cdn.jsdelivr.net/gh/ParveenBhadooOfficial/BhadooJS@1.0.8/apk/MX_Player_Pro_1.9.24.apk">MX_Player_Pro_1.9.24.apk</a>
 
+### WordPress on Lightsail
+
+* Find Password of WordPress
+
+        cat ./bitnami_credentials
+
+* Remove Banner from Site
+
+        sudo /opt/bitnami/apps/wordpress/bnconfig --disable_banner 1
+
+* If you’re using Apache, execute the command below to restart service:
+
+        sudo /opt/bitnami/ctlscript.sh restart apache
+
+* If you’re using NGINX, execute the command below to restart service:
+
+        sudo /opt/bitnami/ctlscript.sh restart nginx
+
+* [Link for SSL on Nginx WordPress](https://docs.bitnami.com/virtual-machine/how-to/generate-install-lets-encrypt-ssl/#alternative-approach)
+
+* Set wp-config.php Writable
+
+        sudo chmod 664 /opt/bitnami/apps/wordpress/htdocs/wp-config.php
+        sudo /opt/bitnami/ctlscript.sh restart apache
+
 Open Source Project by [Parveen Bhadoo](https://www.parveenbhadoo.com)
