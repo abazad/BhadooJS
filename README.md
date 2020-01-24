@@ -175,4 +175,39 @@ For more Visit [ForwardMail.Net](https://forwardemail.net)
         sudo chmod 664 /opt/bitnami/apps/wordpress/htdocs/wp-config.php
         sudo /opt/bitnami/ctlscript.sh restart apache
 
+* Block Direct IP Access
+
+        sudo nano /opt/bitnami/apps/wordpress/conf/httpd-vhosts.conf
+
+        <VirtualHost *:80>
+        ServerName example.com
+        ServerAlias www.example.com
+        DocumentRoot "/opt/bitnami/apps/wordpress/htdocs"
+        Include "/opt/bitnami/apps/wordpress/conf/httpd-app.conf"
+        </VirtualHost>
+
+        <VirtualHost *:443>
+        ServerName example.com
+        ServerAlias www.example.com
+        DocumentRoot "/opt/bitnami/apps/wordpress/htdocs"
+        SSLEngine on
+        SSLCertificateFile "/opt/bitnami/apache2/conf/server.crt"
+        SSLCertificateKeyFile "/opt/bitnami/apache2/conf/server.key"
+        Include "/opt/bitnami/apps/wordpress/conf/httpd-app.conf"
+        </VirtualHost>
+
+        <VirtualHost *:80>
+        ServerName 18.224.130.187
+        Redirect 403 /
+        ErrorDocument 403 "Sorry, direct IP access not allowed. Powered by Bhadoo Industries."
+        Include "/opt/bitnami/apps/wordpress/conf/httpd-app.conf"
+        </VirtualHost>
+        
+        <VirtualHost *:443>
+        ServerName 18.224.130.187
+        Redirect 403 /
+        ErrorDocument 403 "Sorry, direct IP access not allowed. Powered by Bhadoo Industries."
+        Include "/opt/bitnami/apps/wordpress/conf/httpd-app.conf"
+        </VirtualHost>
+
 Open Source Project by [Parveen Bhadoo](https://www.parveenbhadoo.com)
