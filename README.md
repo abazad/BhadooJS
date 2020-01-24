@@ -154,86 +154,89 @@ For more Visit [ForwardMail.Net](https://forwardemail.net)
 
 * Find Password of WordPress
 
-        cat ./bitnami_credentials
+`cat ./bitnami_credentials`
 
 * Remove Banner from Site
 
-        sudo /opt/bitnami/apps/wordpress/bnconfig --disable_banner 1
+`sudo /opt/bitnami/apps/wordpress/bnconfig --disable_banner 1`
 
 * If you’re using Apache, execute the command below to restart service:
 
-        sudo /opt/bitnami/ctlscript.sh restart apache
+`sudo /opt/bitnami/ctlscript.sh restart apache`
 
 * If you’re using NGINX, execute the command below to restart service:
 
-        sudo /opt/bitnami/ctlscript.sh restart nginx
+`sudo /opt/bitnami/ctlscript.sh restart nginx`
 
 * [Link for SSL on Nginx WordPress](https://docs.bitnami.com/virtual-machine/how-to/generate-install-lets-encrypt-ssl/#alternative-approach)
 
 * Set wp-config.php Writable
 
-        sudo chmod 664 /opt/bitnami/apps/wordpress/htdocs/wp-config.php
-        sudo /opt/bitnami/ctlscript.sh restart apache
+`sudo chmod 664 /opt/bitnami/apps/wordpress/htdocs/wp-config.php`
+
+`sudo /opt/bitnami/ctlscript.sh restart apache`
 
 * Block Direct IP Access
 
 Make Error Handling Page
 
-        sudo mkdir /opt/bitnami/apps/wordpress/htdocs/ip
+`sudo mkdir /opt/bitnami/apps/wordpress/htdocs/ip`
         
-        sudo nano /opt/bitnami/apps/wordpress/htdocs/ip/index.html
+`sudo nano /opt/bitnami/apps/wordpress/htdocs/ip/index.html`
         
 Add the content you want to display
 
-        sudo chmod -R 777 /opt/bitnami/apps/wordpress/htdocs/ip
+`sudo chmod -R 777 /opt/bitnami/apps/wordpress/htdocs/ip`
         
 Edit this config file
 
-        sudo nano /opt/bitnami/apps/wordpress/conf/httpd-vhosts.conf
+`sudo nano /opt/bitnami/apps/wordpress/conf/httpd-vhosts.conf`
 
 replace domain and ip with your own data
 
-        <VirtualHost *:80>
-        ServerName example.com
-        ServerAlias www.example.com
-        DocumentRoot "/opt/bitnami/apps/wordpress/htdocs"
-        Include "/opt/bitnami/apps/wordpress/conf/httpd-app.conf"
-        </VirtualHost>
+```
+<VirtualHost *:80>
+ServerName example.com
+ServerAlias www.example.com
+DocumentRoot "/opt/bitnami/apps/wordpress/htdocs"
+Include "/opt/bitnami/apps/wordpress/conf/httpd-app.conf"
+</VirtualHost>
 
-        <VirtualHost *:443>
-        ServerName example.com
-        ServerAlias www.example.com
-        DocumentRoot "/opt/bitnami/apps/wordpress/htdocs"
-        SSLEngine on
-        SSLCertificateFile "/opt/bitnami/apache2/conf/server.crt"
-        SSLCertificateKeyFile "/opt/bitnami/apache2/conf/server.key"
-        Include "/opt/bitnami/apps/wordpress/conf/httpd-app.conf"
-        </VirtualHost>
+<VirtualHost *:443>
+ServerName example.com
+ServerAlias www.example.com
+DocumentRoot "/opt/bitnami/apps/wordpress/htdocs"
+SSLEngine on
+SSLCertificateFile "/opt/bitnami/apache2/conf/server.crt"
+SSLCertificateKeyFile "/opt/bitnami/apache2/conf/server.key"
+Include "/opt/bitnami/apps/wordpress/conf/httpd-app.conf"
+</VirtualHost>
 
-        <VirtualHost *:80>
-        ServerName xxx.xxx.xxx.xxx
-        ServerAlias *
-        DocumentRoot "/opt/bitnami/apps/wordpress/htdocs/ip"
-        Include "/opt/bitnami/apps/wordpress/conf/httpd-app.conf"
-        </VirtualHost>
+<VirtualHost *:80>
+ServerName xxx.xxx.xxx.xxx
+ServerAlias *
+DocumentRoot "/opt/bitnami/apps/wordpress/htdocs/ip"
+Include "/opt/bitnami/apps/wordpress/conf/httpd-app.conf"
+</VirtualHost>
         
-        <VirtualHost *:443>
-        ServerName xxx.xxx.xxx.xxx
-        ServerAlias *
-        DocumentRoot "/opt/bitnami/apps/wordpress/htdocs/ip"
-        Include "/opt/bitnami/apps/wordpress/conf/httpd-app.conf"
-        </VirtualHost>
+<VirtualHost *:443>
+ServerName xxx.xxx.xxx.xxx
+ServerAlias *
+DocumentRoot "/opt/bitnami/apps/wordpress/htdocs/ip"
+Include "/opt/bitnami/apps/wordpress/conf/httpd-app.conf"
+</VirtualHost>
+```
 
 add above file in bitnami config
 
-        sudo nano /opt/bitnami/apache2/conf/bitnami/bitnami-apps-vhosts.conf
+`sudo nano /opt/bitnami/apache2/conf/bitnami/bitnami-apps-vhosts.conf`
 
 in here add this line
 
-        Include "/opt/bitnami/apps/wordpress/conf/httpd-vhosts.conf"
+`Include "/opt/bitnami/apps/wordpress/conf/httpd-vhosts.conf"`
 
 to apply these setting use
 
-        sudo /opt/bitnami/ctlscript.sh restart
+`sudo /opt/bitnami/ctlscript.sh restart`
 
 Open Source Project by [Parveen Bhadoo](https://www.parveenbhadoo.com)
