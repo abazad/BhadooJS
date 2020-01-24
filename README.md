@@ -179,9 +179,9 @@ For more Visit [ForwardMail.Net](https://forwardemail.net)
 
 Make Error Handling Page
 
-        sudo mkdir /opt/bitnami/apps/wordpress/ip
+        sudo mkdir /opt/bitnami/apps/wordpress/htdocs/ip
         
-        sudo nano /opt/bitnami/apps/wordpress/ip/index.html
+        sudo nano /opt/bitnami/apps/wordpress/htdocs/ip/index.html
         
 Add the content you want to display
 
