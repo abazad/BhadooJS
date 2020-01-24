@@ -211,12 +211,15 @@ replace domain and ip with your own data
         </VirtualHost>
 
         <VirtualHost *:80>
+        ServerName xxx.xxx.xxx.xxx
+        ServerAlias *
         DocumentRoot "/opt/bitnami/apps/wordpress/htdocs/ip"
         Include "/opt/bitnami/apps/wordpress/conf/httpd-app.conf"
         </VirtualHost>
         
         <VirtualHost *:443>
-        ServerName 18.224.130.187
+        ServerName xxx.xxx.xxx.xxx
+        ServerAlias *
         DocumentRoot "/opt/bitnami/apps/wordpress/htdocs/ip"
         Include "/opt/bitnami/apps/wordpress/conf/httpd-app.conf"
         </VirtualHost>
@@ -228,5 +231,9 @@ add above file in bitnami config
 in here add this line
 
         Include "/opt/bitnami/apps/wordpress/conf/httpd-vhosts.conf"
+
+to apply these setting use
+
+        sudo /opt/bitnami/ctlscript.sh restart
 
 Open Source Project by [Parveen Bhadoo](https://www.parveenbhadoo.com)
