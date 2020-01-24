@@ -177,7 +177,21 @@ For more Visit [ForwardMail.Net](https://forwardemail.net)
 
 * Block Direct IP Access
 
+Make Error Handling Page
+
+        sudo mkdir /opt/bitnami/apps/wordpress/ip
+        
+        sudo nano /opt/bitnami/apps/wordpress/ip/index.html
+        
+Add the content you want to display
+
+        sudo chmod -R 777 /opt/bitnami/apps/wordpress/htdocs/ip
+        
+Edit this config file
+
         sudo nano /opt/bitnami/apps/wordpress/conf/httpd-vhosts.conf
+
+replace domain and ip with your own data
 
         <VirtualHost *:80>
         ServerName example.com
@@ -197,17 +211,22 @@ For more Visit [ForwardMail.Net](https://forwardemail.net)
         </VirtualHost>
 
         <VirtualHost *:80>
-        ServerName 18.224.130.187
-        Redirect 403 /
-        ErrorDocument 403 "Sorry, direct IP access not allowed. Powered by Bhadoo Industries."
+        DocumentRoot "/opt/bitnami/apps/wordpress/htdocs/ip"
         Include "/opt/bitnami/apps/wordpress/conf/httpd-app.conf"
         </VirtualHost>
         
         <VirtualHost *:443>
         ServerName 18.224.130.187
-        Redirect 403 /
-        ErrorDocument 403 "Sorry, direct IP access not allowed. Powered by Bhadoo Industries."
+        DocumentRoot "/opt/bitnami/apps/wordpress/htdocs/ip"
         Include "/opt/bitnami/apps/wordpress/conf/httpd-app.conf"
         </VirtualHost>
+
+add above file in bitnami config
+
+        sudo nano /opt/bitnami/apache2/conf/bitnami/bitnami-apps-vhosts.conf
+
+in here add this line
+
+        Include "/opt/bitnami/apps/wordpress/conf/httpd-vhosts.conf"
 
 Open Source Project by [Parveen Bhadoo](https://www.parveenbhadoo.com)
