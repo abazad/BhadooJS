@@ -160,13 +160,9 @@ For more Visit [ForwardMail.Net](https://forwardemail.net)
 
 `sudo /opt/bitnami/apps/wordpress/bnconfig --disable_banner 1`
 
-* If you’re using Apache, execute the command below to restart service:
+* If you’re using Bitnami, execute the command below to restart all service:
 
-`sudo /opt/bitnami/ctlscript.sh restart apache`
-
-* If you’re using NGINX, execute the command below to restart service:
-
-`sudo /opt/bitnami/ctlscript.sh restart nginx`
+`sudo /opt/bitnami/ctlscript.sh restart`
 
 * [Link for SSL on Nginx WordPress](https://docs.bitnami.com/virtual-machine/how-to/generate-install-lets-encrypt-ssl/#alternative-approach)
 
@@ -174,7 +170,7 @@ For more Visit [ForwardMail.Net](https://forwardemail.net)
 
 `sudo chmod 664 /opt/bitnami/apps/wordpress/htdocs/wp-config.php`
 
-`sudo /opt/bitnami/ctlscript.sh restart apache`
+`sudo /opt/bitnami/ctlscript.sh restart`
 
 * Block Direct IP Access
 
