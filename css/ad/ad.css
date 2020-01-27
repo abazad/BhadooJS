@@ -1,0 +1,29 @@
+.hashhackers-footer-desktop {
+    background-color: transparent;
+    border-top: 1px solid lightgray;
+    padding-top: 5px;
+}
+.hashhackers-footer-close {
+    float: right;
+    padding-right: 5px;
+}
+.hashhackers-footer {
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    height: 1000px;
+    width: 100%;
+    background: white;
+    z-index: 100000;
+}
+@media screen and (max-width: 600px) {
+.hashhackers-footer {
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    height: 60px;
+    width: 100%;
+    background: white;
+    z-index: 100000;
+}
+}
