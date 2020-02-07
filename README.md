@@ -235,4 +235,20 @@ to apply these setting use
 
 `sudo /opt/bitnami/ctlscript.sh restart`
 
+### Google Group for Sharing Team Drive
+
+* [Open](https://groups.google.com/forum/#!overview)
+* Create Group
+* Set below settings about who can do what [Image Here](https://cdn.jsdelivr.net/gh/ParveenBhadooOfficial/BhadooJS@master/images/group-settings.PNG)
+* Click on Create.
+* Then go to [My Groups](https://groups.google.com/forum/#!myforums)
+* Open your Group
+* Click on Manage Group
+* Disallow Posting options
+* On Left Panel Click on Group visibility
+* Set to Anyone on the Web
+* On Left Panel Click on Basic Permissions under Permissons Tab [Image Here](https://cdn.jsdelivr.net/gh/ParveenBhadooOfficial/BhadooJS@master/images/basicpermissions.PNG)
+* Set it as you want to.
+* Click on Set Welcome Message to Welcome Users to Group.
+
 Open Source Project by [Parveen Bhadoo](https://www.parveenbhadoo.com)
