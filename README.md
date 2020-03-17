@@ -166,6 +166,22 @@ For more Visit [ForwardMail.Net](https://forwardemail.net)
 
 * [Link for SSL on Nginx WordPress](https://docs.bitnami.com/virtual-machine/how-to/generate-install-lets-encrypt-ssl/#alternative-approach)
 
+* http to HTTPS Redirect after installing `Simple SSL` Plugin
+
+`sudo nano /opt/bitnami/apps/wordpress/conf/htaccess.conf`
+
+and add these lines
+
+````
+# BEGIN rlrssslReallySimpleSSL rsssl_version[3.2.9]
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteCond %{HTTP:CF-Visitor} '"scheme":"http"'
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+</IfModule>
+# END rlrssslReallySimpleSSL
+````
+
 * Set wp-config.php Writable
 
 `sudo chmod 664 /opt/bitnami/apps/wordpress/htdocs/wp-config.php`
