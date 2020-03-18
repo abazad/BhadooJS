@@ -269,7 +269,7 @@ to apply these setting use
 
 ### Rapidleech [RAR Fix](https://github.com/Th3-822/rapidleech/issues/71)
 
-`cd /var/www/html/`
+````cd /var/www/html/````
 
 ````
 sudo rm -rf rar && sudo wget https://rarlab.com/rar/rarlinux-x64-5.6.0.tar.gz && sudo tar -xvf rarlinux-x64-5.6.0.tar.gz && sudo rm -f rarlinux-x64-5.6.0.tar.gz && sudo chmod -R 777 rar && sudo chmod -R 777 rar/*
