@@ -276,5 +276,15 @@ cd /var/www/html
 ````
 sudo rm -rf rar && sudo wget https://rarlab.com/rar/rarlinux-x64-5.6.0.tar.gz && sudo tar -xvf rarlinux-x64-5.6.0.tar.gz && sudo rm -f rarlinux-x64-5.6.0.tar.gz && sudo chmod -R 777 rar && sudo chmod -R 777 rar/*
 ````
+### LAMP on Ubuntu
+
+````
+sudo apt-get install apache2
+sudo apt-get install mysql-server
+sudo apt-get install php5 libapache2-mod-php5
+sudo /etc/init.d/apache2 restart
+php -r 'echo "\n\nYour PHP installation is working fine.\n\n\n";'
+cd /var/www/html
+````
 
 Open Source Project by [Parveen Bhadoo](https://www.parveenbhadoo.com)
