@@ -10,6 +10,13 @@ Latest CDN Files with embed process [https://www.jsdelivr.com/package/gh/Parveen
 
 Latest CDN Files with direct links [https://cdn.jsdelivr.net/gh/ParveenBhadooOfficial/BhadooJS/](https://cdn.jsdelivr.net/gh/ParveenBhadooOfficial/BhadooJS/)
 
+### System Upgrade using Terminal on Linux Ubuntu
+
+````
+sudo apt-get update && sudo apt-get upgrade
+sudo apt update && sudo apt upgrade
+````
+
 ### Working with npm
 
 Use Node.js command prompt as terminal
