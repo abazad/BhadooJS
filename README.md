@@ -288,7 +288,7 @@ sudo rm -rf rar && sudo wget https://rarlab.com/rar/rarlinux-x64-5.6.0.tar.gz &&
 ````
 sudo apt-get install apache2
 sudo apt-get install mysql-server
-sudo apt-get install php5 libapache2-mod-php5
+sudo apt-get install php5 libapache2-mod-php5 && sudo apt-get install phplibapache2-mod-php && sudo apt-get install php
 sudo /etc/init.d/apache2 restart
 php -r 'echo "\n\nYour PHP installation is working fine.\n\n\n";'
 cd /var/www/html
