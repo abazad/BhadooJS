@@ -274,6 +274,53 @@ to apply these setting use
 * Set it as you want to.
 * Click on Set Welcome Message to Welcome Users to Group.
 
+### Disable Deletion and Deactivation of WordPress Plugins
+
+````
+/**
+ * Remove Delete/Disable Action for Plugins
+ * https://wordpress.org/support/topic/disable-delete-option-for-plugins/
+ * @param $actions
+ * @param $plugin_file
+ * @param $plugin_data
+ * @param $context
+ * @return mixed
+ */
+function bhadoo_disable_plugin_deletion( $actions, $plugin_file, $plugin_data, $context ) {
+
+    // Remove delete link for plugins
+    if ( array_key_exists( 'delete', $actions ) && in_array( $plugin_file, array(
+        'akismet/akismet.php',
+		'jetpack/jetpack.php',
+        'all-in-one-wp-migration/all-in-one-wp-migration.php',
+		'all-in-one-wp-migration-gdrive-extension/all-in-one-wp-migration-gdrive-extension.php',
+		'wp-mail-smtp-pro/wp_mail_smtp.php',
+		'really-simple-ssl/rlrsssl-really-simple-ssl.php'
+    ) ) )
+        unset( $actions['delete'] );
+
+    return $actions;
+}
+add_filter( 'plugin_action_links', 'bhadoo_disable_plugin_deletion', 10, 4 );
+
+function bhadoo_disable_plugin_deactivation( $actions, $plugin_file, $plugin_data, $context ) {
+
+    // Remove delete link for plugins
+    if ( array_key_exists( 'deactivate', $actions ) && in_array( $plugin_file, array(
+        'akismet/akismet.php',
+		'jetpack/jetpack.php',
+        'all-in-one-wp-migration/all-in-one-wp-migration.php',
+		'all-in-one-wp-migration-gdrive-extension/all-in-one-wp-migration-gdrive-extension.php',
+		'wp-mail-smtp-pro/wp_mail_smtp.php',
+		'really-simple-ssl/rlrsssl-really-simple-ssl.php'
+    ) ) )
+        unset( $actions['deactivate'] );
+
+    return $actions;
+}
+add_filter( 'plugin_action_links', 'bhadoo_disable_plugin_deactivation', 10, 4 );
+````
+
 ### Rapidleech [RAR Fix](https://github.com/Th3-822/rapidleech/issues/71)
 
 ````
