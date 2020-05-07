@@ -335,10 +335,20 @@ sudo rm -rf rar && sudo wget https://rarlab.com/rar/rarlinux-x64-5.6.0.tar.gz &&
 ````
 sudo apt-get install apache2
 sudo apt-get install mysql-server
-sudo apt-get install php5 libapache2-mod-php5 && sudo apt-get install phplibapache2-mod-php && sudo apt-get install php
+sudo apt install php-pear php-fpm php-dev php-zip php-curl php-xmlrpc php-gd php-mysql php-mbstring php-xml libapache2-mod-php
 sudo /etc/init.d/apache2 restart
 php -r 'echo "\n\nYour PHP installation is working fine.\n\n\n";'
 cd /var/www/html
 ````
+
+### Personal CMDs for Aria Bot
+
+```
+sudo apt-get update && sudo apt-get upgrade && sudo apt update && sudo apt upgrade && sudo apt install unzip
+bash <(curl -s https://cdn.jsdelivr.net/gh/jscdn/scripts@master/aria-telegram-mirror-bot-ready-server.sh)
+sudo nano src/.constants.js
+bash <(curl -s https://cdn.jsdelivr.net/gh/jscdn/scripts@master/aria-telegram-mirror-bot-start-bot.sh)
+/mirror https://github.com/ParveenBhadooOfficial/aria-telegram-mirror-bot/blob/master/README.md
+```
 
 Open Source Project by [Parveen Bhadoo](https://www.parveenbhadoo.com)
