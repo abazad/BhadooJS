@@ -351,4 +351,14 @@ bash <(curl -s https://cdn.jsdelivr.net/gh/jscdn/scripts@master/aria-telegram-mi
 /mirror https://github.com/ParveenBhadooOfficial/aria-telegram-mirror-bot/blob/master/README.md
 ```
 
+### generate_string_session.py
+
+```
+wget https://raw.githubusercontent.com/ParveenBhadooOfficial/BhadooJS/master/generate_string_session.py
+sudo apt-get update && sudo apt-get upgrade && sudo apt update && sudo apt upgrade
+sudo apt install python3-pip
+sudo pip3 install -U telethon
+python3 generate_string_session.py
+```
+
 Open Source Project by [Parveen Bhadoo](https://www.parveenbhadoo.com)
