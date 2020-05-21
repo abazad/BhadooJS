@@ -345,9 +345,9 @@ cd /var/www/html
 
 ```
 sudo apt-get update && sudo apt-get upgrade && sudo apt update && sudo apt upgrade && sudo apt install unzip
-bash <(curl -s https://cdn.jsdelivr.net/gh/jscdn/scripts@master/aria-telegram-mirror-bot-ready-server.sh)
+bash <(curl -s https://raw.githubusercontent.com/jscdn/scripts/master/aria-telegram-mirror-bot-ready-server.sh)
 sudo nano src/.constants.js
-bash <(curl -s https://cdn.jsdelivr.net/gh/jscdn/scripts@master/aria-telegram-mirror-bot-start-bot.sh)
+bash <(curl -s https://raw.githubusercontent.com/jscdn/scripts/master/aria-telegram-mirror-bot-start-bot.sh)
 /mirror https://github.com/ParveenBhadooOfficial/aria-telegram-mirror-bot/blob/master/README.md
 ```
 
