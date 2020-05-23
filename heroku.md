@@ -44,4 +44,4 @@ Heroku-Note: Doing authorizations ( /authorize command ) through telegram wont b
 ```
 git add authorized_chats.txt -f
 git commit -asm "Added hardcoded authorized_chats.txt"
-git push heroku heroku:master
+git push heroku master
