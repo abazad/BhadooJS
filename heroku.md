@@ -28,7 +28,7 @@ git commit -m "Added Creds."
 ```
 - Push Code to Heroku:
 ```
-git push heroku heroku:master --force
+git push heroku master --force
 ```
 - Restart Worker by these commands:
 ```
