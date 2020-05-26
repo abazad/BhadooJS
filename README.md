@@ -254,6 +254,14 @@ in here add this line
 
 `Include "/opt/bitnami/apps/wordpress/conf/httpd-vhosts.conf"`
 
+Add imagick Module for PHP
+
+`sudo nano /opt/bitnami/php/etc/php.ini`
+
+find Extentions and add this without `;`
+
+`extension=imagick.so`
+
 to apply these setting use
 
 `sudo /opt/bitnami/ctlscript.sh restart`
