@@ -1,4 +1,4 @@
-// Load the necessary static in the head and code from https://github.com/yanzai/goindex
+// Load the necessary static in the head and code from https://github.com/ParveenBhadooOfficial/BHadoo-Drive-Index
 document.write('<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/mdui@0.4.3/dist/css/mdui.min.css">');
 // markdown支持
 document.write('<script src="//cdn.jsdelivr.net/npm/markdown-it@10.0.0/dist/markdown-it.min.js"></script>');
