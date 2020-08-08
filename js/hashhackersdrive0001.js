@@ -1,4 +1,4 @@
-// Load the necessary static in the head and code from https://github.com/ParveenBhadooOfficial/BHadoo-Drive-Index
+// Load the necessary static in the head and code from https://github.com/ParveenBhadooOfficial/Bhadoo-Drive-Index
 document.write('<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/mdui@0.4.3/dist/css/mdui.min.css">');
 // markdown支持
 document.write('<script src="//cdn.jsdelivr.net/npm/markdown-it@10.0.0/dist/markdown-it.min.js"></script>');
@@ -13,11 +13,23 @@ function init() {
   document.siteName = $('title').html();
   $('body').addClass(`mdui-theme-primary-${UI.main_color} mdui-theme-accent-${UI.accent_color}`);
   var html = `
-<center><br><a href="//driveindex.ga"><img src="https://images.cdn.hashhackers.com/logo/logo-white-d.svg" class="btn1" width="220" height="40"></a></center>
+<center><br><a href="//drive.hashhackers.com"><img src="https://images.cdn.hashhackers.com/logo/logo-white-d.svg" class="btn1" width="220" height="40"></a></center>
 <header class="mdui-appbar mdui-color-theme"> 
    <div id="nav" class="mdui-toolbar mdui-container${UI.fluid_navigation_bar ? '-fluid' : ''} ${UI.dark_mode ? 'mdui-text-color-white-text' : ''}">
    </div> 
 </header>
+<center>
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-5435553179213419"
+                 data-ad-slot="8917084536"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+</center>
 <div id="content" class="mdui-container"> 
 </div>
 	`;
@@ -706,7 +718,7 @@ function file_code(path) {
   };
   var name = path.split('/').pop();
   var ext = name.split('.').pop().toLowerCase();
-  var href = "https://dl-cdn1-four-hashhackers.romferemanerify.workers.dev" + path;
+  var href = window.location.origin + path;
   var content = `
 <div class="mdui-container">
 <pre id="editor" ></pre>
@@ -753,7 +765,7 @@ function copyToClipboard(str) {
 
 // Document display video |mp4|webm|avi|
 function file_video(path) {
-  const url = "https://dl-cdn1-four-hashhackers.romferemanerify.workers.dev" + path;
+  const url = window.location.origin + path;
   let player_items = [
     {
       text: 'MXPlayer(Free)',
@@ -814,7 +826,7 @@ function file_video(path) {
 
 // File display Audio |mp3|flac|m4a|wav|ogg|
 function file_audio(path) {
-  var url = "https://dl-cdn1-four-hashhackers.romferemanerify.workers.dev" + path;
+  var url = window.location.origin + path;
   var content = `
 <div class="mdui-container-fluid">
 	<br>
@@ -839,7 +851,7 @@ function file_audio(path) {
 
 // Document display pdf  pdf
 function file_pdf(path) {
-  const url = "https://dl-cdn1-four-hashhackers.romferemanerify.workers.dev" + path;
+  const url = window.location.origin + path;
   const inline_url = `${url}?inline=true`
   const file_name = decodeURI(path.slice(path.lastIndexOf('/') + 1, path.length))
   var content = `
@@ -851,7 +863,7 @@ function file_pdf(path) {
 
 // image display
 function file_image(path) {
-  var url = "https://dl-cdn1-four-hashhackers.romferemanerify.workers.dev" + path;
+  var url = window.location.origin + path;
   // console.log(window.location.pathname)
   const currentPathname = window.location.pathname
   const lastIndex = currentPathname.lastIndexOf('/');
