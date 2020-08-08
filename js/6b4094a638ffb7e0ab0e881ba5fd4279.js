@@ -1,4 +1,4 @@
-// Load the necessary static in the head and code from https://github.com/ParveenBhadooOfficial/Bhadoo-Drive-Index
+// Load the necessary static in the head and code from https://github.com/ParveenBhadooOfficial/BHadoo-Drive-Index
 document.write('<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/mdui@0.4.3/dist/css/mdui.min.css">');
 // markdown支持
 document.write('<script src="//cdn.jsdelivr.net/npm/markdown-it@10.0.0/dist/markdown-it.min.js"></script>');
@@ -753,7 +753,7 @@ function copyToClipboard(str) {
 
 // Document display video |mp4|webm|avi|
 function file_video(path) {
-  const url = "https://6b4094a638ffb7e0ab0e881ba5fd4279.romferemanerify.workers.dev" + path;
+  const url = window.location.origin + path;
   let player_items = [
     {
       text: 'MXPlayer(Free)',
@@ -814,7 +814,7 @@ function file_video(path) {
 
 // File display Audio |mp3|flac|m4a|wav|ogg|
 function file_audio(path) {
-  var url = "https://6b4094a638ffb7e0ab0e881ba5fd4279.romferemanerify.workers.dev" + path;
+  var url = window.location.origin + path;
   var content = `
 <div class="mdui-container-fluid">
 	<br>
@@ -839,7 +839,7 @@ function file_audio(path) {
 
 // Document display pdf  pdf
 function file_pdf(path) {
-  const url = "https://6b4094a638ffb7e0ab0e881ba5fd4279.romferemanerify.workers.dev" + path;
+  const url = window.location.origin + path;
   const inline_url = `${url}?inline=true`
   const file_name = decodeURI(path.slice(path.lastIndexOf('/') + 1, path.length))
   var content = `
@@ -851,7 +851,7 @@ function file_pdf(path) {
 
 // image display
 function file_image(path) {
-  var url = "https://6b4094a638ffb7e0ab0e881ba5fd4279.romferemanerify.workers.dev" + path;
+  var url = window.location.origin + path;
   // console.log(window.location.pathname)
   const currentPathname = window.location.pathname
   const lastIndex = currentPathname.lastIndexOf('/');
