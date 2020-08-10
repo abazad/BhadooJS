@@ -33,7 +33,7 @@ function init() {
 <br>Sharable Link: <p id="sharelink"></p>
 <script>
 var shareurl = "https://one.driveindex.ga" + window.location.pathname;
-document.getElementById("input").innerHTML= shareurl;
+document.getElementById("sharelink").innerHTML= shareurl;
 </script>
 </center>
 <div id="content" class="mdui-container"> 
