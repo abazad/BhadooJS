@@ -30,7 +30,7 @@ function init() {
             <script>
                  (adsbygoogle = window.adsbygoogle || []).push({});
             </script>
-<br>Sharable Link: <div id="sharelink"></div>
+<br>Shareable Link: <div id="sharelink"></div>
 <script>
 var shareurl = "https://one.driveindex.ga" + window.location.pathname;
 document.getElementById("sharelink").innerHTML= '<input type="text" value="' + shareurl + '" disabled>';
