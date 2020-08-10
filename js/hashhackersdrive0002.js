@@ -12,6 +12,7 @@ if (UI.dark_mode) {
 function init() {
   document.siteName = $('title').html();
   $('body').addClass(`mdui-theme-primary-${UI.main_color} mdui-theme-accent-${UI.accent_color}`);
+  
   var html = `
 <center><br><a href="//drive.hashhackers.com"><img src="https://images.cdn.hashhackers.com/logo/logo-white-d.svg" class="btn1" width="220" height="40"></a></center>
 <header class="mdui-appbar mdui-color-theme"> 
@@ -29,6 +30,11 @@ function init() {
             <script>
                  (adsbygoogle = window.adsbygoogle || []).push({});
             </script>
+<br>Sharable Link: <p id="sharelink"></p>
+<script>
+var shareurl = "https://one.driveindex.ga" + window.location.pathname;
+document.getElementById("input").innerHTML= shareurl;
+</script>
 </center>
 <div id="content" class="mdui-container"> 
 </div>
