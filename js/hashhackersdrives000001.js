@@ -730,7 +730,7 @@ function file_code(path) {
 	document.getElementById("sharelink").innerHTML= '<textarea class="mdui-textfield-input" style="color:white;" disabled>' + shareurl +'</textarea>';
 	</script>
 	<label class="mdui-textfield-label" style="color:white;">Download Link</label>
-	<input class="mdui-textfield-input" type="text" value="${href}"/>
+	<input class="mdui-textfield-input" type="text" value="${href}" disabled="" />
 </div>
 <a href="${href}" class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-theme-accent"><i class="mdui-icon material-icons">file_download</i></a>
 
@@ -818,7 +818,7 @@ function file_video(path) {
 	</script>
 	<div class="mdui-textfield">
 	  <label class="mdui-textfield-label" style="color:white;">Download Link</label>
-	  <input class="mdui-textfield-input" type="text" value="${url}"/>
+	  <input class="mdui-textfield-input" type="text" value="${url}" disabled="" />
 	</div>
 </div>
 <a href="${url}" class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-theme-accent"><i class="mdui-icon material-icons">file_download</i></a>
@@ -848,7 +848,7 @@ function file_audio(path) {
 	</script>
 	<div class="mdui-textfield">
 	  <label class="mdui-textfield-label" style="color:white;">Download Link</label>
-	  <input class="mdui-textfield-input" type="text" value="${url}"/>
+	  <input class="mdui-textfield-input" type="text" value="${url}" disabled="" />
 	</div>
 </div>
 <a href="${url}" class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-theme-accent"><i class="mdui-icon material-icons">file_download</i></a>
@@ -930,7 +930,7 @@ function file_image(path) {
   </script>
 	<div class="mdui-textfield">
 	  <label class="mdui-textfield-label" style="color:white;">Download Link</label>
-	  <input class="mdui-textfield-input" type="text" value="${url}"/>
+	  <input class="mdui-textfield-input" type="text" value="${url}" disabled="" />
 	</div>
         <br>
 </div>
