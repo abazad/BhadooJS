@@ -31,11 +31,6 @@ function init() {
                  (adsbygoogle = window.adsbygoogle || []).push({});
             </script>
 </center>
-<br>Shareable Link: <div class="mdui-textfield" id="sharelink"></div>
-<script>
-var shareurl = "https://one.driveindex.ga" + window.location.pathname;
-document.getElementById("sharelink").innerHTML= '<label class="mdui-textfield-label">Shareable address</label><textarea class="mdui-textfield-input" disabled="">' + shareurl +'</textarea>';
-</script>
 <div id="content" class="mdui-container">
 </div>
 	`;
@@ -213,6 +208,11 @@ function requestSearch(params, resultCallback) {
 // Render file list
 function list(path) {
   var content = `
+	Shareable Link: <div class="mdui-textfield" id="sharelink"></div>
+	<script>
+	var shareurl = "https://one.driveindex.ga" + window.location.pathname;
+	document.getElementById("sharelink").innerHTML= '<textarea class="mdui-textfield-input" style="text-color:white;" disabled>' + shareurl +'</textarea>';
+	</script>
 	<div id="head_md" class="mdui-typo" style="display:none;padding: 20px 0;"></div>
 
 	 <div class="mdui-row"> 
@@ -447,6 +447,11 @@ function append_files_to_list(path, files) {
  */
 function render_search_result_list() {
   var content = `
+	Shareable Link: <div class="mdui-textfield" id="sharelink"></div>
+	<script>
+	var shareurl = "https://one.driveindex.ga" + window.location.pathname;
+	document.getElementById("sharelink").innerHTML= '<textarea class="mdui-textfield-input" style="text-color:white;" disabled>' + shareurl +'</textarea>';
+	</script>
 	<div id="head_md" class="mdui-typo" style="display:none;padding: 20px 0;"></div>
 
 	 <div class="mdui-row"> 
