@@ -197,7 +197,7 @@ function requestSearch(params, resultCallback) {
 // Render file list
 function list(path) {
   var content = `
-	<br>Shareable Link: <div class="mdui-textfield" id="sharelink"></div>
+	<br><label class="mdui-textfield-label" style="color:white;">Shareable Link </label><div class="mdui-textfield" id="sharelink"></div>
 	<script>
 	var shareurl = "https://one.driveindex.ga" + window.location.pathname;
 	document.getElementById("sharelink").innerHTML= '<textarea class="mdui-textfield-input" style="color:white;" disabled>' + shareurl +'</textarea>';
@@ -436,7 +436,7 @@ function append_files_to_list(path, files) {
  */
 function render_search_result_list() {
   var content = `
-	<br>Shareable Link: <div class="mdui-textfield" id="sharelink"></div>
+	<br><label class="mdui-textfield-label" style="color:white;">Shareable Link </label><div class="mdui-textfield" id="sharelink"></div>
 	<script>
 	var shareurl = "https://one.driveindex.ga" + window.location.pathname;
 	document.getElementById("sharelink").innerHTML= '<textarea class="mdui-textfield-input" style="color:white;" disabled>' + shareurl +'</textarea>';
@@ -724,7 +724,7 @@ function file_code(path) {
 <pre id="editor" ></pre>
 </div>
 <div class="mdui-textfield">
-	<br>Shareable Link: <div class="mdui-textfield" id="sharelink"></div>
+	<br><label class="mdui-textfield-label" style="color:white;">Shareable Link </label><div class="mdui-textfield" id="sharelink"></div>
 	<script>
 	var shareurl = "https://one.driveindex.ga" + window.location.pathname;
 	document.getElementById("sharelink").innerHTML= '<textarea class="mdui-textfield-input" style="color:white;" disabled>' + shareurl +'</textarea>';
@@ -811,7 +811,7 @@ function file_video(path) {
 	</video>
 	<br>${playBtn}
 	<!-- Fixed label -->
-	<br>Shareable Link: <div class="mdui-textfield" id="sharelink"></div>
+	<br><label class="mdui-textfield-label" style="color:white;">Shareable Link </label><div class="mdui-textfield" id="sharelink"></div>
 	<script>
 	var shareurl = "https://one.driveindex.ga" + window.location.pathname;
 	document.getElementById("sharelink").innerHTML= '<textarea class="mdui-textfield-input" style="color:white;" disabled>' + shareurl +'</textarea>';
@@ -841,7 +841,7 @@ function file_audio(path) {
 	</audio>
 	<br>
 	<!-- Fixed label -->
-	<br>Shareable Link: <div class="mdui-textfield" id="sharelink"></div>
+	<br><label class="mdui-textfield-label" style="color:white;">Shareable Link </label><div class="mdui-textfield" id="sharelink"></div>
 	<script>
 	var shareurl = "https://one.driveindex.ga" + window.location.pathname;
 	document.getElementById("sharelink").innerHTML= '<textarea class="mdui-textfield-input" style="color:white;" disabled>' + shareurl +'</textarea>';
