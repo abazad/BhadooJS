@@ -936,7 +936,10 @@ function file_image(path) {
         <br>
 </div>
 <a href="${url}" class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-theme-accent"><i class="mdui-icon material-icons">file_download</i></a>
-
+<script>
+var shareurl = "https://one.driveindex.ga" + window.location.pathname;
+document.getElementsByClassName("shareurls").innerHTML= shareurl;
+</script>
     `;
   // my code
   $('#content').html(content);
