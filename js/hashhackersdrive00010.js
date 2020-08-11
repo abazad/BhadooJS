@@ -30,13 +30,12 @@ function init() {
             <script>
                  (adsbygoogle = window.adsbygoogle || []).push({});
             </script>
-<br>Shareable Link: <div id="sharelink"></div>
-<script>
-var shareurl = "https://one.driveindex.ga" + window.location.pathname;
-document.getElementById("sharelink").innerHTML= '<input type="text" value="' + shareurl + '" disabled>';
-</script>
 </center>
-<div id="content" class="mdui-container"> 
+<div id="content" class="mdui-container">
+<div class="mdui-textfield mdui-textfield-not-empty">
+	  <label class="mdui-textfield-label" style="color:white;">Shareable address</label>
+	  <textarea class="mdui-textfield-input shareurls" spellcheck="false" style="height: 56px;" disabled></textarea>
+	</div>
 </div>
 	`;
   $('body').html(html);
@@ -817,8 +816,8 @@ function file_video(path) {
 	  <input class="mdui-textfield-input" type="text" value="${url}"/>
 	</div>
 	<div class="mdui-textfield">
-	  <label class="mdui-textfield-label">HTML Reference address</label>
-	  <textarea class="mdui-textfield-input"><video><source src="${url}" type="video/mp4"></video></textarea>
+	  <label class="mdui-textfield-label">Shareable address</label>
+	  <textarea class="mdui-textfield-input shareurls" disabled></textarea>
 	</div>
 </div>
 <a href="${url}" class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-theme-accent"><i class="mdui-icon material-icons">file_download</i></a>
@@ -846,8 +845,8 @@ function file_audio(path) {
 	  <input class="mdui-textfield-input" type="text" value="${url}"/>
 	</div>
 	<div class="mdui-textfield">
-	  <label class="mdui-textfield-label">HTML Reference address</label>
-	  <textarea class="mdui-textfield-input"><audio><source src="${url}"></audio></textarea>
+	  <label class="mdui-textfield-label">Shareable address</label>
+	  <textarea class="mdui-textfield-input shareurls" disabled></textarea>
 	</div>
 </div>
 <a href="${url}" class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-theme-accent"><i class="mdui-icon material-icons">file_download</i></a>
@@ -924,19 +923,20 @@ function file_image(path) {
 	<br>
 	<div class="mdui-textfield">
 	  <label class="mdui-textfield-label">Download Link</label>
-	  <input class="mdui-textfield-input" type="text" value="${url}"/>
+	  <input class="mdui-textfield-input" type="text" value="${url}" disabled="" />
 	</div>
 	<div class="mdui-textfield">
-	  <label class="mdui-textfield-label">HTML Reference address</label>
-	  <input class="mdui-textfield-input" type="text" value="<img src='${url}' />"/>
+	  <label class="mdui-textfield-label">Shareable address</label>
+	  <input class="mdui-textfield-input shareurls" type="text" value="" disabled="" />
 	</div>
         <div class="mdui-textfield">
 	  <label class="mdui-textfield-label">Markdown Reference address</label>
-	  <input class="mdui-textfield-input" type="text" value="![](${url})"/>
+	  <input class="mdui-textfield-input" type="text" value="![](${url})" disabled="" />
 	</div>
         <br>
 </div>
 <a href="${url}" class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-theme-accent"><i class="mdui-icon material-icons">file_download</i></a>
+
     `;
   // my code
   $('#content').html(content);
