@@ -19,18 +19,7 @@ function init() {
    <div id="nav" class="mdui-toolbar mdui-container${UI.fluid_navigation_bar ? '-fluid' : ''} ${UI.dark_mode ? 'mdui-text-color-white-text' : ''}">
    </div> 
 </header>
-<center>
-            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-            <ins class="adsbygoogle"
-                 style="display:block"
-                 data-ad-client="ca-pub-5435553179213419"
-                 data-ad-slot="8917084536"
-                 data-ad-format="auto"
-                 data-full-width-responsive="true"></ins>
-            <script>
-                 (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
-</center>
+<center><iframe height="260" width="310" style="border-style:hidden;" src="https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-5435553179213419&slotname=1921571160&format=300x250&url=https://ai.hashhackers.com/how-do-i-become-cloud-computing-expert"></iframe></center>
 <div id="content" class="mdui-container">
 </div>
 	`;
@@ -211,7 +200,7 @@ function list(path) {
 	<br>Shareable Link: <div class="mdui-textfield" id="sharelink"></div>
 	<script>
 	var shareurl = "https://one.driveindex.ga" + window.location.pathname;
-	document.getElementById("sharelink").innerHTML= '<textarea class="mdui-textfield-input" style="text-color:white;" disabled>' + shareurl +'</textarea>';
+	document.getElementById("sharelink").innerHTML= '<textarea class="mdui-textfield-input" style="color:white;" disabled>' + shareurl +'</textarea>';
 	</script>
 	<div id="head_md" class="mdui-typo" style="display:none;padding: 20px 0;"></div>
 
@@ -450,7 +439,7 @@ function render_search_result_list() {
 	<br>Shareable Link: <div class="mdui-textfield" id="sharelink"></div>
 	<script>
 	var shareurl = "https://one.driveindex.ga" + window.location.pathname;
-	document.getElementById("sharelink").innerHTML= '<textarea class="mdui-textfield-input" style="text-color:white;" disabled>' + shareurl +'</textarea>';
+	document.getElementById("sharelink").innerHTML= '<textarea class="mdui-textfield-input" style="color:white;" disabled>' + shareurl +'</textarea>';
 	</script>
 	<div id="head_md" class="mdui-typo" style="display:none;padding: 20px 0;"></div>
 
@@ -738,9 +727,9 @@ function file_code(path) {
 	<br>Shareable Link: <div class="mdui-textfield" id="sharelink"></div>
 	<script>
 	var shareurl = "https://one.driveindex.ga" + window.location.pathname;
-	document.getElementById("sharelink").innerHTML= '<textarea class="mdui-textfield-input" style="text-color:white;" disabled>' + shareurl +'</textarea>';
+	document.getElementById("sharelink").innerHTML= '<textarea class="mdui-textfield-input" style="color:white;" disabled>' + shareurl +'</textarea>';
 	</script>
-	<label class="mdui-textfield-label" style="text-color:white;">Download Link</label>
+	<label class="mdui-textfield-label" style="color:white;">Download Link</label>
 	<input class="mdui-textfield-input" type="text" value="${href}"/>
 </div>
 <a href="${href}" class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-theme-accent"><i class="mdui-icon material-icons">file_download</i></a>
@@ -825,10 +814,10 @@ function file_video(path) {
 	<br>Shareable Link: <div class="mdui-textfield" id="sharelink"></div>
 	<script>
 	var shareurl = "https://one.driveindex.ga" + window.location.pathname;
-	document.getElementById("sharelink").innerHTML= '<textarea class="mdui-textfield-input" style="text-color:white;" disabled>' + shareurl +'</textarea>';
+	document.getElementById("sharelink").innerHTML= '<textarea class="mdui-textfield-input" style="color:white;" disabled>' + shareurl +'</textarea>';
 	</script>
 	<div class="mdui-textfield">
-	  <label class="mdui-textfield-label" style="text-color:white;">Download Link</label>
+	  <label class="mdui-textfield-label" style="color:white;">Download Link</label>
 	  <input class="mdui-textfield-input" type="text" value="${url}"/>
 	</div>
 </div>
@@ -855,10 +844,10 @@ function file_audio(path) {
 	<br>Shareable Link: <div class="mdui-textfield" id="sharelink"></div>
 	<script>
 	var shareurl = "https://one.driveindex.ga" + window.location.pathname;
-	document.getElementById("sharelink").innerHTML= '<textarea class="mdui-textfield-input" style="text-color:white;" disabled>' + shareurl +'</textarea>';
+	document.getElementById("sharelink").innerHTML= '<textarea class="mdui-textfield-input" style="color:white;" disabled>' + shareurl +'</textarea>';
 	</script>
 	<div class="mdui-textfield">
-	  <label class="mdui-textfield-label" style="text-color:white;">Download Link</label>
+	  <label class="mdui-textfield-label" style="color:white;">Download Link</label>
 	  <input class="mdui-textfield-input" type="text" value="${url}"/>
 	</div>
 </div>
@@ -937,10 +926,10 @@ function file_image(path) {
   Shareable Link: <div class="mdui-textfield" id="sharelink"></div>
   <script>
   var shareurl = "https://one.driveindex.ga" + window.location.pathname;
-  document.getElementById("sharelink").innerHTML= '<textarea class="mdui-textfield-input" style="text-color:white;" disabled>' + shareurl +'</textarea>';
+  document.getElementById("sharelink").innerHTML= '<textarea class="mdui-textfield-input" style="color:white;" disabled>' + shareurl +'</textarea>';
   </script>
 	<div class="mdui-textfield">
-	  <label class="mdui-textfield-label" style="text-color:white;">Download Link</label>
+	  <label class="mdui-textfield-label" style="color:white;">Download Link</label>
 	  <input class="mdui-textfield-input" type="text" value="${url}"/>
 	</div>
         <br>
