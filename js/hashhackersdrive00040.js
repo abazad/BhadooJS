@@ -31,12 +31,12 @@ function init() {
                  (adsbygoogle = window.adsbygoogle || []).push({});
             </script>
 </center>
-<div id="content" class="mdui-container">
-<br>Shareable Link: <div id="sharelink"></div>
+<br>Shareable Link: <div class="mdui-textfield" id="sharelink"></div>
 <script>
 var shareurl = "https://one.driveindex.ga" + window.location.pathname;
-document.getElementById("sharelink").innerHTML= '<div class="mdui-textfield"><label class="mdui-textfield-label">Shareable address</label><textarea class="mdui-textfield-input shareurl" disabled="">' + shareurl +'</textarea></div>';
+document.getElementById("sharelink").innerHTML= '<label class="mdui-textfield-label">Shareable address</label><textarea class="mdui-textfield-input" disabled="">' + shareurl +'</textarea>';
 </script>
+<div id="content" class="mdui-container">
 </div>
 	`;
   $('body').html(html);
