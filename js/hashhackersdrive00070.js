@@ -208,7 +208,7 @@ function requestSearch(params, resultCallback) {
 // Render file list
 function list(path) {
   var content = `
-	Shareable Link: <div class="mdui-textfield" id="sharelink"></div>
+	<br>Shareable Link: <div class="mdui-textfield" id="sharelink"></div>
 	<script>
 	var shareurl = "https://one.driveindex.ga" + window.location.pathname;
 	document.getElementById("sharelink").innerHTML= '<textarea class="mdui-textfield-input" style="text-color:white;" disabled>' + shareurl +'</textarea>';
@@ -447,7 +447,7 @@ function append_files_to_list(path, files) {
  */
 function render_search_result_list() {
   var content = `
-	Shareable Link: <div class="mdui-textfield" id="sharelink"></div>
+	<br>Shareable Link: <div class="mdui-textfield" id="sharelink"></div>
 	<script>
 	var shareurl = "https://one.driveindex.ga" + window.location.pathname;
 	document.getElementById("sharelink").innerHTML= '<textarea class="mdui-textfield-input" style="text-color:white;" disabled>' + shareurl +'</textarea>';
@@ -735,12 +735,12 @@ function file_code(path) {
 <pre id="editor" ></pre>
 </div>
 <div class="mdui-textfield">
-	Shareable Link: <div class="mdui-textfield" id="sharelink"></div>
+	<br>Shareable Link: <div class="mdui-textfield" id="sharelink"></div>
 	<script>
 	var shareurl = "https://one.driveindex.ga" + window.location.pathname;
 	document.getElementById("sharelink").innerHTML= '<textarea class="mdui-textfield-input" style="text-color:white;" disabled>' + shareurl +'</textarea>';
 	</script>
-	<label class="mdui-textfield-label">Download Link</label>
+	<label class="mdui-textfield-label" style="text-color:white;">Download Link</label>
 	<input class="mdui-textfield-input" type="text" value="${href}"/>
 </div>
 <a href="${href}" class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-theme-accent"><i class="mdui-icon material-icons">file_download</i></a>
@@ -822,18 +822,14 @@ function file_video(path) {
 	</video>
 	<br>${playBtn}
 	<!-- Fixed label -->
-	Shareable Link: <div class="mdui-textfield" id="sharelink"></div>
+	<br>Shareable Link: <div class="mdui-textfield" id="sharelink"></div>
 	<script>
 	var shareurl = "https://one.driveindex.ga" + window.location.pathname;
 	document.getElementById("sharelink").innerHTML= '<textarea class="mdui-textfield-input" style="text-color:white;" disabled>' + shareurl +'</textarea>';
 	</script>
 	<div class="mdui-textfield">
-	  <label class="mdui-textfield-label">Download Link</label>
+	  <label class="mdui-textfield-label" style="text-color:white;">Download Link</label>
 	  <input class="mdui-textfield-input" type="text" value="${url}"/>
-	</div>
-	<div class="mdui-textfield">
-	  <label class="mdui-textfield-label">HTML Reference address</label>
-	  <textarea class="mdui-textfield-input"><video><source src="${url}" type="video/mp4"></video></textarea>
 	</div>
 </div>
 <a href="${url}" class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-theme-accent"><i class="mdui-icon material-icons">file_download</i></a>
@@ -856,18 +852,14 @@ function file_audio(path) {
 	</audio>
 	<br>
 	<!-- Fixed label -->
-	Shareable Link: <div class="mdui-textfield" id="sharelink"></div>
+	<br>Shareable Link: <div class="mdui-textfield" id="sharelink"></div>
 	<script>
 	var shareurl = "https://one.driveindex.ga" + window.location.pathname;
 	document.getElementById("sharelink").innerHTML= '<textarea class="mdui-textfield-input" style="text-color:white;" disabled>' + shareurl +'</textarea>';
 	</script>
 	<div class="mdui-textfield">
-	  <label class="mdui-textfield-label">Download Link</label>
+	  <label class="mdui-textfield-label" style="text-color:white;">Download Link</label>
 	  <input class="mdui-textfield-input" type="text" value="${url}"/>
-	</div>
-	<div class="mdui-textfield">
-	  <label class="mdui-textfield-label">HTML Reference address</label>
-	  <textarea class="mdui-textfield-input"><audio><source src="${url}"></audio></textarea>
 	</div>
 </div>
 <a href="${url}" class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-theme-accent"><i class="mdui-icon material-icons">file_download</i></a>
@@ -942,17 +934,14 @@ function file_image(path) {
 	    <img class="mdui-img-fluid" src="${url}"/>
     </div>
 	<br>
+  Shareable Link: <div class="mdui-textfield" id="sharelink"></div>
+  <script>
+  var shareurl = "https://one.driveindex.ga" + window.location.pathname;
+  document.getElementById("sharelink").innerHTML= '<textarea class="mdui-textfield-input" style="text-color:white;" disabled>' + shareurl +'</textarea>';
+  </script>
 	<div class="mdui-textfield">
-	  <label class="mdui-textfield-label">Download Link</label>
+	  <label class="mdui-textfield-label" style="text-color:white;">Download Link</label>
 	  <input class="mdui-textfield-input" type="text" value="${url}"/>
-	</div>
-	<div class="mdui-textfield">
-	  <label class="mdui-textfield-label">HTML Reference address</label>
-	  <input class="mdui-textfield-input" type="text" value="<img src='${url}' />"/>
-	</div>
-        <div class="mdui-textfield">
-	  <label class="mdui-textfield-label">Markdown Reference address</label>
-	  <input class="mdui-textfield-input" type="text" value="![](${url})"/>
 	</div>
         <br>
 </div>
