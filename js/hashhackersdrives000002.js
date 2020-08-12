@@ -197,6 +197,17 @@ function requestSearch(params, resultCallback) {
 // Render file list
 function list(path) {
   var content = `
+  <br>
+  <div class="mdui-toolbar-spacer"></div>
+        <div id="search_bar" class="mdui-textfield mdui-textfield-expandable mdui-float-right ${model.is_search_page ? 'mdui-textfield-expanded' : ''}" style="max-width:${isMobile ? 300 : 400}px">
+            <button class="mdui-textfield-icon mdui-btn mdui-btn-icon" onclick="if($('#search_bar').hasClass('mdui-textfield-expanded') && $('#search_bar_form>input').val()) $('#search_bar_form').submit();">
+                <i class="mdui-icon material-icons">search</i>
+            </button>
+            <form id="search_bar_form" method="get" action="/${cur}:search">
+            <input class="mdui-textfield-input" type="text" name="q" placeholder="Search in current drive" value="${search_text}"/>
+            </form>
+            <button class="mdui-textfield-close mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">close</i></button>
+  </div>
 	<br><label class="mdui-textfield-label" style="color:white;">Shareable Link </label><div class="mdui-textfield" id="sharelink"></div>
 	<script>
 	var shareurl = "https://one.driveindex.ga" + window.location.pathname;
