@@ -200,7 +200,7 @@ function list(path) {
 	<br><label class="mdui-textfield-label" style="color:white;">Shareable Link </label><div class="mdui-textfield" id="sharelink"></div>
 	<script>
 	var shareurl = "https://one.driveindex.ga" + window.location.pathname;
-	document.getElementById("sharelink").innerHTML= '<textarea class="mdui-textfield-input" style="color:white;" onClick="copyToClipboard(' + shareurl + ');" disabled>' + shareurl + '</textarea>';
+	document.getElementById("sharelink").innerHTML= '<textarea class="mdui-textfield-input" style="color:white;" disabled>' + shareurl +'</textarea>';
 	</script>
 	<div id="head_md" class="mdui-typo" style="display:none;padding: 20px 0;"></div>
 
@@ -212,7 +212,7 @@ function list(path) {
 	<i class="mdui-icon material-icons icon-sort" data-sort="name" data-order="more">expand_more</i>
 	    </div> 
 	    <div class="mdui-col-sm-3 mdui-text-right">
-	     Last Modified on
+	     Change the Time
 	<i class="mdui-icon material-icons icon-sort" data-sort="date" data-order="downward">expand_more</i>
 	    </div> 
 	    <div class="mdui-col-sm-2 mdui-text-right">
@@ -439,7 +439,7 @@ function render_search_result_list() {
 	<br><label class="mdui-textfield-label" style="color:white;">Shareable Link </label><div class="mdui-textfield" id="sharelink"></div>
 	<script>
 	var shareurl = "https://one.driveindex.ga" + window.location.pathname;
-	document.getElementById("sharelink").innerHTML= '<textarea class="mdui-textfield-input" style="color:white;" onClick="copyToClipboard(' + shareurl + ');" disabled>' + shareurl +'</textarea>';
+	document.getElementById("sharelink").innerHTML= '<textarea class="mdui-textfield-input" style="color:white;" disabled>' + shareurl +'</textarea>';
 	</script>
 	<div id="head_md" class="mdui-typo" style="display:none;padding: 20px 0;"></div>
 
@@ -451,7 +451,7 @@ function render_search_result_list() {
 	<i class="mdui-icon material-icons icon-sort" data-sort="name" data-order="more">expand_more</i>
 	    </div> 
 	    <div class="mdui-col-sm-3 mdui-text-right">
-	     Last Modified on
+	     Change the Time
 	<i class="mdui-icon material-icons icon-sort" data-sort="date" data-order="downward">expand_more</i>
 	    </div> 
 	    <div class="mdui-col-sm-2 mdui-text-right">
@@ -727,10 +727,10 @@ function file_code(path) {
 	<br><label class="mdui-textfield-label" style="color:white;">Shareable Link </label><div class="mdui-textfield" id="sharelink"></div>
 	<script>
 	var shareurl = "https://one.driveindex.ga" + window.location.pathname;
-	document.getElementById("sharelink").innerHTML= '<textarea class="mdui-textfield-input" style="color:white;" onClick="copyToClipboard(' + shareurl + ');" disabled>' + shareurl +'</textarea>';
+	document.getElementById("sharelink").innerHTML= '<textarea class="mdui-textfield-input" style="color:white;" disabled>' + shareurl +'</textarea>';
 	</script>
 	<label class="mdui-textfield-label" style="color:white;">Download Link</label>
-	<input class="mdui-textfield-input" type="text" value="${href}" onClick="copyToClipboard(${href});" disabled="" />
+	<input class="mdui-textfield-input" type="text" value="${href}" disabled="" />
 </div>
 <a href="${href}" class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-theme-accent"><i class="mdui-icon material-icons">file_download</i></a>
 
@@ -814,11 +814,11 @@ function file_video(path) {
 	<br><label class="mdui-textfield-label" style="color:white;">Shareable Link </label><div class="mdui-textfield" id="sharelink"></div>
 	<script>
 	var shareurl = "https://one.driveindex.ga" + window.location.pathname;
-	document.getElementById("sharelink").innerHTML= '<textarea class="mdui-textfield-input" style="color:white;" onClick="copyToClipboard(' + shareurl + ');" disabled>' + shareurl +'</textarea>';
+	document.getElementById("sharelink").innerHTML= '<textarea class="mdui-textfield-input" style="color:white;" disabled>' + shareurl +'</textarea>';
 	</script>
 	<div class="mdui-textfield">
 	  <label class="mdui-textfield-label" style="color:white;">Download Link</label>
-	  <input class="mdui-textfield-input" type="text" value="${url}" onClick="copyToClipboard(${url});" disabled="" />
+	  <input class="mdui-textfield-input" type="text" value="${url}" disabled="" />
 	</div>
 </div>
 <a href="${url}" class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-theme-accent"><i class="mdui-icon material-icons">file_download</i></a>
@@ -844,11 +844,11 @@ function file_audio(path) {
 	<br><label class="mdui-textfield-label" style="color:white;">Shareable Link </label><div class="mdui-textfield" id="sharelink"></div>
 	<script>
 	var shareurl = "https://one.driveindex.ga" + window.location.pathname;
-	document.getElementById("sharelink").innerHTML= '<textarea class="mdui-textfield-input" style="color:white;" onClick="copyToClipboard(' + shareurl + ');" disabled>' + shareurl +'</textarea>';
+	document.getElementById("sharelink").innerHTML= '<textarea class="mdui-textfield-input" style="color:white;" disabled>' + shareurl +'</textarea>';
 	</script>
 	<div class="mdui-textfield">
 	  <label class="mdui-textfield-label" style="color:white;">Download Link</label>
-	  <input class="mdui-textfield-input" type="text" value="${url}" onClick="copyToClipboard(${url});" disabled="" />
+	  <input class="mdui-textfield-input" type="text" value="${url}" disabled="" />
 	</div>
 </div>
 <a href="${url}" class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-theme-accent"><i class="mdui-icon material-icons">file_download</i></a>
@@ -926,11 +926,11 @@ function file_image(path) {
   Shareable Link: <div class="mdui-textfield" id="sharelink"></div>
   <script>
   var shareurl = "https://one.driveindex.ga" + window.location.pathname;
-  document.getElementById("sharelink").innerHTML= '<textarea class="mdui-textfield-input" style="color:white;" onClick="copyToClipboard(' + shareurl + ');" disabled>' + shareurl +'</textarea>';
+  document.getElementById("sharelink").innerHTML= '<textarea class="mdui-textfield-input" style="color:white;" disabled>' + shareurl +'</textarea>';
   </script>
 	<div class="mdui-textfield">
 	  <label class="mdui-textfield-label" style="color:white;">Download Link</label>
-	  <input class="mdui-textfield-input" type="text" value="${url}" onClick="copyToClipboard(${url});" disabled="" />
+	  <input class="mdui-textfield-input" type="text" value="${url}" disabled="" />
 	</div>
         <br>
 </div>
