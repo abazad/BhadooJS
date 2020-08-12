@@ -200,7 +200,7 @@ function list(path) {
 	<br><label class="mdui-textfield-label" style="color:white;">Shareable Link </label><div class="mdui-textfield" id="sharelink"></div>
 	<script>
 	var shareurl = "https://one.driveindex.ga" + window.location.pathname;
-	document.getElementById("sharelink").innerHTML= '<textarea class="mdui-textfield-input" style="color:white;" disabled>' + shareurl +'</textarea>';
+	document.getElementById("sharelink").innerHTML= '<input class="mdui-textfield-input" type="text" value="' + shareurl +'" disabled="" />';
 	</script>
 	<div id="head_md" class="mdui-typo" style="display:none;padding: 20px 0;"></div>
 
@@ -439,7 +439,7 @@ function render_search_result_list() {
 	<br><label class="mdui-textfield-label" style="color:white;">Shareable Link </label><div class="mdui-textfield" id="sharelink"></div>
 	<script>
 	var shareurl = "https://one.driveindex.ga" + window.location.pathname;
-	document.getElementById("sharelink").innerHTML= '<textarea class="mdui-textfield-input" style="color:white;" disabled>' + shareurl +'</textarea>';
+	document.getElementById("sharelink").innerHTML= '<input class="mdui-textfield-input" type="text" value="' + shareurl +'" disabled="" />';
 	</script>
 	<div id="head_md" class="mdui-typo" style="display:none;padding: 20px 0;"></div>
 
@@ -727,7 +727,7 @@ function file_code(path) {
 	<br><label class="mdui-textfield-label" style="color:white;">Shareable Link </label><div class="mdui-textfield" id="sharelink"></div>
 	<script>
 	var shareurl = "https://one.driveindex.ga" + window.location.pathname;
-	document.getElementById("sharelink").innerHTML= '<textarea class="mdui-textfield-input" style="color:white;" disabled>' + shareurl +'</textarea>';
+	document.getElementById("sharelink").innerHTML= '<input class="mdui-textfield-input" type="text" value="' + shareurl +'" disabled="" />';
 	</script>
 	<label class="mdui-textfield-label" style="color:white;">Download Link</label>
 	<input class="mdui-textfield-input" type="text" value="${href}" disabled="" />
@@ -814,7 +814,7 @@ function file_video(path) {
 	<br><label class="mdui-textfield-label" style="color:white;">Shareable Link </label><div class="mdui-textfield" id="sharelink"></div>
 	<script>
 	var shareurl = "https://one.driveindex.ga" + window.location.pathname;
-	document.getElementById("sharelink").innerHTML= '<textarea class="mdui-textfield-input" style="color:white;" disabled>' + shareurl +'</textarea>';
+	document.getElementById("sharelink").innerHTML= '<input class="mdui-textfield-input" type="text" value="' + shareurl +'" disabled="" />';
 	</script>
 	<div class="mdui-textfield">
 	  <label class="mdui-textfield-label" style="color:white;">Download Link</label>
@@ -844,7 +844,7 @@ function file_audio(path) {
 	<br><label class="mdui-textfield-label" style="color:white;">Shareable Link </label><div class="mdui-textfield" id="sharelink"></div>
 	<script>
 	var shareurl = "https://one.driveindex.ga" + window.location.pathname;
-	document.getElementById("sharelink").innerHTML= '<textarea class="mdui-textfield-input" style="color:white;" disabled>' + shareurl +'</textarea>';
+	document.getElementById("sharelink").innerHTML= '<input class="mdui-textfield-input" type="text" value="' + shareurl +'" disabled="" />';
 	</script>
 	<div class="mdui-textfield">
 	  <label class="mdui-textfield-label" style="color:white;">Download Link</label>
@@ -923,10 +923,10 @@ function file_image(path) {
 	    <img class="mdui-img-fluid" src="${url}"/>
     </div>
 	<br>
-  Shareable Link: <div class="mdui-textfield" id="sharelink"></div>
+  <label class="mdui-textfield-label" style="color:white;">Shareable Link </label><div class="mdui-textfield" id="sharelink"></div>
   <script>
   var shareurl = "https://one.driveindex.ga" + window.location.pathname;
-  document.getElementById("sharelink").innerHTML= '<textarea class="mdui-textfield-input" style="color:white;" disabled>' + shareurl +'</textarea>';
+  document.getElementById("sharelink").innerHTML= '<input class="mdui-textfield-input" type="text" value="' + shareurl +'" disabled="" />';
   </script>
 	<div class="mdui-textfield">
 	  <label class="mdui-textfield-label" style="color:white;">Download Link</label>
