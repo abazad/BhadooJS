@@ -199,9 +199,9 @@ function list(path) {
   var content = `
 	<br><label class="mdui-textfield-label" style="color:white;">Shareable Link </label><div class="mdui-textfield" id="sharelink"></div>
   <script>
-	var shareurl = 'https://one.driveindex.ga' + window.location.pathname;
-	document.getElementById('sharelink').innerHTML= '<input class="mdui-textfield-input" type="text" value="' + shareurl +'" disabled="" /><button class="mdui-btn mdui-color-theme-accent mdui-ripple" onClick="copyToClipboard(' + '"' + shareurl + '"' + ');">Copy Link</button>';
-  </script>
+	var shareurl = "https://one.driveindex.ga" + window.location.pathname;
+	document.getElementById("sharelink").innerHTML= '<input class="mdui-textfield-input" id="txttocopy" type="text" value="' + shareurl +'" disabled="" /><button class="mdui-btn mdui-color-theme-accent mdui-ripple" onclick="copyURL()" id="copybtn">Copy Link</button>';
+	</script>
 	<div id="head_md" class="mdui-typo" style="display:none;padding: 20px 0;"></div>
 
 	 <div class="mdui-row"> 
