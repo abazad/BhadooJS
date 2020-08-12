@@ -201,7 +201,14 @@ function list(path) {
   <script>
 	var shareurl = "https://one.driveindex.ga" + window.location.pathname;
 	document.getElementById("sharelink").innerHTML= '<input class="mdui-textfield-input" id="txttocopy" type="text" value="' + shareurl +'" disabled="" /><button class="mdui-btn mdui-color-theme-accent mdui-ripple" onclick="copyURL()" id="copybtn">Copy Link</button>';
-	</script>
+  function copyURL() {
+    var copyText = document.getElementById("txttocopy");
+    copyText.select();
+    copyText.setSelectionRange(0, 99999)
+    document.execCommand("copy");
+    document.getElementById("copybtn").innerHTML = "Copied";
+  }
+  </script>
 	<div id="head_md" class="mdui-typo" style="display:none;padding: 20px 0;"></div>
 
 	 <div class="mdui-row"> 
