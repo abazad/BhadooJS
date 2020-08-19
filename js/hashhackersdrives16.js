@@ -206,7 +206,7 @@ function list(path) {
     copyText.select();
     copyText.setSelectionRange(0, 99999)
     document.execCommand("copy");
-    document.getElementById("copybtn").innerHTML = "Copied";
+    alert("Shareable Link Copied.");
   }
   </script>
 	<div id="head_md" class="mdui-typo" style="display:none;padding: 20px 0;"></div>
@@ -452,8 +452,7 @@ function render_search_result_list() {
     copyText.select();
     copyText.setSelectionRange(0, 99999)
     document.execCommand("copy");
-    document.getElementById("copybtn").innerHTML = "Copied";
-  }
+    alert("Shareable Link Copied.");  }
   </script>
 	<div id="head_md" class="mdui-typo" style="display:none;padding: 20px 0;"></div>
 
@@ -747,8 +746,7 @@ function file_code(path) {
     copyText.select();
     copyText.setSelectionRange(0, 99999)
     document.execCommand("copy");
-    document.getElementById("copybtn").innerHTML = "Copied";
-  }
+    alert("Shareable Link Copied.");  }
   </script>
 	<label class="mdui-textfield-label" style="color:white;">Download Link</label>
 	<input class="mdui-textfield-input" type="text" value="${href}" disabled="" />
@@ -841,8 +839,7 @@ function file_video(path) {
     copyText.select();
     copyText.setSelectionRange(0, 99999)
     document.execCommand("copy");
-    document.getElementById("copybtn").innerHTML = "Copied";
-  }
+    alert("Shareable Link Copied.");  }
   </script>
 	<div class="mdui-textfield">
 	  <label class="mdui-textfield-label" style="color:white;">Download Link</label>
@@ -878,8 +875,7 @@ function file_audio(path) {
     copyText.select();
     copyText.setSelectionRange(0, 99999)
     document.execCommand("copy");
-    document.getElementById("copybtn").innerHTML = "Copied";
-  }
+    alert("Shareable Link Copied.");  }
   </script>
 	<div class="mdui-textfield">
 	  <label class="mdui-textfield-label" style="color:white;">Download Link</label>
@@ -967,8 +963,7 @@ function file_image(path) {
     copyText.select();
     copyText.setSelectionRange(0, 99999)
     document.execCommand("copy");
-    document.getElementById("copybtn").innerHTML = "Copied";
-  }
+    alert("Shareable Link Copied.");  }
   </script>
 	<div class="mdui-textfield">
 	  <label class="mdui-textfield-label" style="color:white;">Download Link</label>
