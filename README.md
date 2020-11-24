@@ -329,7 +329,7 @@ function bhadoo_disable_plugin_deactivation( $actions, $plugin_file, $plugin_dat
 add_filter( 'plugin_action_links', 'bhadoo_disable_plugin_deactivation', 10, 4 );
 ````
 
-### Rapidleech [RAR Fix](https://github.com/Th3-822/rapidleech/issues/71)
+### Rapidleech [RAR Fix](https://web.archive.org/web/20201011110252/https://github.com/Th3-822/rapidleech/issues/71)
 
 ````
 cd /var/www/html
@@ -338,7 +338,8 @@ cd /var/www/html
 ````
 sudo rm -rf rar && sudo wget https://rarlab.com/rar/rarlinux-x64-5.6.0.tar.gz && sudo tar -xvf rarlinux-x64-5.6.0.tar.gz && sudo rm -f rarlinux-x64-5.6.0.tar.gz && sudo chmod -R 777 rar && sudo chmod -R 777 rar/*
 ````
-### LAMP on Ubuntu - [Source](https://web.archive.org/web/20180323030918/https://howtoubuntu.org/how-to-install-lamp-on-ubuntu) [PHP](https://www.cloudbooklet.com/upgrade-php-version-to-php-7-4-on-ubuntu/)
+
+### LAMP on Ubuntu - [Source](https://web.archive.org/web/20180323030918/https://howtoubuntu.org/how-to-install-lamp-on-ubuntu) [PHP](https://web.archive.org/web/20200923164429/https://www.cloudbooklet.com/upgrade-php-version-to-php-7-4-on-ubuntu/)
 
 ````
 sudo apt-get install apache2
